@@ -1,0 +1,27 @@
+.navcontainer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 4rem;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  z-index: 50;
+  align-items: center;
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
+}
+
+.navul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  padding: 0px 150px 0px 150px;
+}
+
+.navul a {
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

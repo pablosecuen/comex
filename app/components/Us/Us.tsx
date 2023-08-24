@@ -25,17 +25,17 @@ function Us() {
         </span>
         <div className={styles.cardcontainer}>
           <div className={styles.card}>
-            <h5 className={styles.title}>Valores</h5>
-            <span className={styles.spantext}>
-              Responsabilidad, Trabajo en equipo, Honestidad, transparencia y compromiso
-            </span>
-          </div>
-          <div className={styles.card}>
             <h5 className={styles.title}>Misión</h5>
             <span className={styles.spantext}>
               Nuestro objetivo es brindar un servicio eficiente, personalizado, confiable.
               Consideramos que la clave de los grandes resultados es la sumatoria y coordinación de
               esfuerzos para lograr un mismo objetivo.
+            </span>
+          </div>
+          <div className={styles.card}>
+            <h5 className={styles.title}>Valores</h5>
+            <span className={styles.spantext}>
+              Responsabilidad, Trabajo en equipo, Honestidad, transparencia y compromiso
             </span>
           </div>
           <div className={styles.card}>

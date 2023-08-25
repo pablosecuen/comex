@@ -1,12 +1,13 @@
 .main {
   width: 100vw;
-  min-height: 50vh;
+  min-height: 80vh;
   display: flex;
   padding-bottom: 100px;
 }
 
 .leftcontainer {
   width: 50%;
+  position: relative;
 }
 .rightcontainer {
   display: flex;
@@ -14,7 +15,7 @@
   gap: 30px;
 
   justify-content: center;
-  align-items: center;
+  align-items: start;
   width: 50%;
 }
 
@@ -27,7 +28,7 @@
   -webkit-text-stroke: 1px #976ece;
   font-size: 25px;
   font-weight: 200;
-  text-align: center;
+  text-align: start;
 }
 .input {
   height: 40px;
@@ -57,4 +58,21 @@
   &:hover {
     cursor: pointer;
   }
+}
+
+.imgdude {
+  width: auto;
+  position: absolute;
+  transform: scale(2);
+  left: 20%;
+  bottom: 19%;
+}
+
+.textarea {
+  height: 100px;
+  width: 80%;
+  background-color: transparent;
+  border-radius: 1px;
+  border: 1px solid #976ece;
+  padding-left: 20px;
 }

@@ -12,7 +12,7 @@ export const services = [
         icon: FcShipped
     },
     {
-        servicio: 'Gestión y tramitación de Permisos de Exportación y Despachos de Importación, Temporales, Tránsitos.',
+        servicio: 'Gestión de Permisos de Exportación y Despachos de Importación, Temporales, Tránsitos.',
         icon: FcFile
     },
     {

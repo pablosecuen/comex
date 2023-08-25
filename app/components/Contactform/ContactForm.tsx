@@ -1,10 +1,18 @@
-
+import Image from "next/image";
 import style from "./contactform.module.css";
 
 function ContactForm() {
   return (
     <section id="contact" className={style.main}>
-      <div className={style.leftcontainer}></div>
+      <div className={style.leftcontainer}>
+        <Image
+          src="/assets/img/glassesdude.png"
+          width={400}
+          height={450}
+          alt="dude with glasses"
+          className={style.imgdude}
+        />
+      </div>
       <div className={style.rightcontainer}>
         <h3 className={style.title}>CONTACTANOS</h3>
         <span className={style.span}>Nuestros representantes estan a disposicion</span>
@@ -43,7 +51,7 @@ function ContactForm() {
             <textarea
               name="message"
               required
-              className={style.input}
+              className={style.textarea}
               placeholder="Mensaje"
             ></textarea>
           </div>

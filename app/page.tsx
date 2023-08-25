@@ -1,3 +1,6 @@
+import ContactForm from "./components/Contactform/ContactForm";
+import Footer from "./components/Footer/Footer";
+import GoogleMapComponent from "./components/Googlemap/GoogleMapComponent";
 import Landing from "./components/Landing/Landing";
 import Services from "./components/Services/Services";
 import Us from "./components/Us/Us";
@@ -53,6 +56,9 @@ export default function Home() {
       </section>
       <Us />
       <Services />
+      <GoogleMapComponent />
+      <ContactForm />
+      <Footer />
     </main>
   );
 }

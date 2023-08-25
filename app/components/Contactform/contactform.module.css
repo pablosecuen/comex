@@ -1,0 +1,60 @@
+.main {
+  width: 100vw;
+  min-height: 50vh;
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.leftcontainer {
+  width: 50%;
+}
+.rightcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.span {
+  color: white;
+  -webkit-text-stroke: 1px #976ece;
+  font-size: 25px;
+  font-weight: 200;
+  text-align: center;
+}
+.input {
+  height: 40px;
+  width: 80%;
+  background-color: transparent;
+  border-radius: 1px;
+  border: 1px solid #976ece;
+  padding-left: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 20px;
+}
+
+.btn {
+  background-color: #976ece;
+  width: 200px;
+  padding: 10px 20px 10px 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}

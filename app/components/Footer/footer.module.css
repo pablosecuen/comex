@@ -1,0 +1,30 @@
+.main {
+  width: 100vw;
+  min-height: 50vh;
+  background-color: #976ece;
+  padding: 50px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+.div2 {
+  grid-area: 1 / 1 / 4 / 2;
+}
+.div3 {
+  grid-area: 1 / 2 / 4 / 3;
+}
+.div4 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div5 {
+  grid-area: 3 / 3 / 4 / 4;
+}

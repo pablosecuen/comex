@@ -6,7 +6,7 @@ import { useState } from "react";
 import { services } from "@/app/data/data";
 import Icon from "../Icon/Icon";
 const Navbar: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleMouseEnter = () => {
     setIsModalOpen(true);
@@ -27,10 +27,10 @@ const Navbar: React.FC = () => {
           <li>NOSOTROS</li>
         </Link>
         <Link href="">
-          <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <li onMouseEnter={handleMouseEnter}>
             SERVICIOS
             {isModalOpen && (
-              <div className={styles.modal}>
+              <div className={styles.modal} onMouseLeave={handleMouseLeave}>
                 {/* Contenido del menú secundario */}
                 {services.map((service, index) => (
                   <div className={styles.servicecard} key={index}>

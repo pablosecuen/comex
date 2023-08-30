@@ -12,10 +12,10 @@ function Landing() {
         </div>
         <div className={styles.div2}>
           <Image
-            src="/assets/img/guy.png"
+            src="/assets/img/plain.png"
             alt="guypic"
-            width={400}
-            height={600}
+            width={1200}
+            height={400}
             className={styles.guypic}
           ></Image>
           <div className={styles.purplecircle}></div>

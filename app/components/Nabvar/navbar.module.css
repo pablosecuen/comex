@@ -29,9 +29,9 @@
 
 .modal {
   position: absolute;
-  top: 2.2rem;
-  height: 400px;
-  width: 600px;
+  top: 30px;
+  height: 500px;
+  width: 700px;
   right: 50%;
   transform: translate(50%);
   display: flex;
@@ -40,30 +40,28 @@
   color: white;
   font-size: 10px;
   gap: 4px;
-  padding: 10px;
+  padding: 20px;
   backdrop-filter: blur(40px) saturate(200%);
   -webkit-backdrop-filter: blur(40px) saturate(200%);
   background-color: rgba(17, 25, 40, 0.53);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
-
 }
 
-
-
 .servicecard {
-  width: 100px;
   border-radius: 2px;
   display: flex;
-  flex-direction: column;
+  gap: 4px;
   align-items: center;
   justify-content: center;
 }
 
 .card {
+  width: 100px;
   display: flex;
+  min-height: 100px;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   border: 0.5px solid white;
   border-radius: 5px;
   &:hover {
@@ -73,4 +71,11 @@
 
 .icon {
   font-size: 20px;
+}
+
+.servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
 }

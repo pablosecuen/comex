@@ -64,7 +64,7 @@ export const services = [
                 icon:FcCloth
                 },
                 {
-                    servicio: 'Asesoramiento sobre documentación y aspectos generales de la operación a proveedores y compradores del exterior.',
+                    servicio: 'Asesoramiento sobre aspectos generales de la operación a proveedores y compradores del exterior.',
                     icon:FcAddressBook
                     },
                     {

@@ -30,23 +30,25 @@
 .card {
   width: 200px;
   height: 250px;
-  padding: 5px;
-  border: 1px white solid;
+  padding: 10px;
+  box-shadow: 7px 5px 25px rgba(151, 110, 206, 0.2);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 4px;
+  background: #cfcfcf;
+  background: linear-gradient(to top right, #976ece 0%, #000000 6%, #000000 94%, #976ece 100%);
 }
 
 .icon {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   padding: 10px;
-  background: linear-gradient(45deg, red, green, blue, violet);
+  background: linear-gradient(45deg, rgba(223, 43, 43, 0.521), rgba(0, 128, 0, 0.476), rgba(0, 0, 255, 0.493), rgba(238, 130, 238, 0.499));
   background-size: 300% 300%; /* Tamaño del gradiente */
   animation: rotateGradient 5s linear infinite; /* Animación para rotar colores */
 }
@@ -88,4 +90,12 @@
 .icon1 {
   height: 30px;
   width: 30px;
+}
+
+.button1 {
+  padding: 4px 8px 4px 8px;
+  margin-bottom: 10px;
+  &:hover {
+    cursor: pointer;
+  }
 }

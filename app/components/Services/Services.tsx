@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./services.module.css";
-import { services, extraservices } from "@/app/data/data";
+import { services } from "@/app/data/data";
 import Icon from "../Icon/Icon";
 
 function Services() {
@@ -18,6 +18,7 @@ function Services() {
                 </div>
               </div>
               <span className={styles.servicios}>{service.servicio}</span>
+              <button className={styles.button1}>MAS INFO</button>
             </div>
           </div>
         ))}

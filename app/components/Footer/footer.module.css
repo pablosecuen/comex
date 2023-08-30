@@ -1,6 +1,6 @@
 .main {
   width: 100vw;
-  min-height: 40vh;
+  min-height: 30vh;
   background-color: #976ece;
   padding: 150px;
 }
@@ -90,4 +90,3 @@
     cursor: pointer;
   }
 }
-

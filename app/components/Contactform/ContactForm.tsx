@@ -6,17 +6,25 @@ function ContactForm() {
     <section id="contact" className={style.main}>
       <div className={style.leftcontainer}>
         <Image
-          src="/assets/img/glassesdude.png"
+          src="/assets/img/containers.png"
           width={400}
           height={450}
-          alt="dude with glasses"
+          alt="containers"
           className={style.imgdude}
         />
       </div>
       <div className={style.rightcontainer}>
-        <h3 className={style.title}>CONTACTANOS</h3>
-        <span className={style.span}>Nuestros representantes estan a disposicion</span>
+        <Image
+          src="/assets/img/truck.png"
+          width={400}
+          height={450}
+          alt="truck"
+          className={style.truck}
+        />
         <form className={style.form}>
+          <h3 className={style.title}>CONTACTANOS</h3>
+
+          <span className={style.span}>Nuestros representantes estan a disposicion</span>
           <div className={style["form-item"]}>
             <input
               type="text"

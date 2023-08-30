@@ -38,9 +38,10 @@
 .guypic {
   position: absolute;
   left: 50%;
-  bottom: 0%;
+  bottom: 30%;
   transform: translateX(-50%);
   z-index: 1;
+  width: auto;
 }
 
 .div3 {
@@ -72,12 +73,11 @@
   display: inline-block;
   transform: rotate(270deg);
   transform-origin: left bottom;
-  margin-bottom: -400px;
+  margin-bottom: -300px;
 }
 
 .div5 {
   grid-area: 2 / 2 / 3 / 3;
-
   display: flex;
   justify-content: start;
   align-items: center;

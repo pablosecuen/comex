@@ -6,7 +6,7 @@ import { useState } from "react";
 import { services } from "@/app/data/data";
 import Icon from "../Icon/Icon";
 const Navbar: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(true);
 
   const handleMouseEnter = () => {
     setIsModalOpen(true);
@@ -34,12 +34,12 @@ const Navbar: React.FC = () => {
                 {/* Contenido del menú secundario */}
                 {services.map((service, index) => (
                   <div className={styles.servicecard} key={index}>
-                    <div className={styles.card}>
-                      <div className={styles.icon}>
-                        <div className={styles.innerCircle}>
-                          <Icon icon={service.icon()} className={styles.icon1} />
-                        </div>
+                    <div className={styles.icon}>
+                      <div className={styles.innerCircle}>
+                        <Icon icon={service.icon()} className={styles.icon1} />
                       </div>
+                    </div>
+                    <div className={styles.card}>
                       <span className={styles.servicios}>{service.servicio}</span>
                     </div>
                   </div>

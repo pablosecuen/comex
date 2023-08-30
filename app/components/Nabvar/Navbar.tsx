@@ -6,7 +6,7 @@ import { useState } from "react";
 import { services } from "@/app/data/data";
 import Icon from "../Icon/Icon";
 const Navbar: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleMouseEnter = () => {
     setIsModalOpen(true);

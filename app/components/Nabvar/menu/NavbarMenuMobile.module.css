@@ -12,6 +12,7 @@
   flex-direction: column;
   align-items: start;
   justify-content: start;
+  box-shadow: -7px 7px 10px rgba(255, 255, 255, 0.2);
   @media (width > 768px) {
     display: none;
   }
@@ -75,4 +76,14 @@
 
 .servicios {
   opacity: 0.8;
+}
+
+.closingdiv {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  z-index: 100;
+  transition: ease 0.3s;
+  top: 62px;
 }

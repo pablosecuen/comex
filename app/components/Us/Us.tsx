@@ -6,7 +6,7 @@ function Us() {
   return (
     <>
       {" "}
-      <section className={styles.main}>
+      <section className={styles.main} id="nosotros">
         <Image
           src="/assets/elipse/Design.png"
           width={1100}

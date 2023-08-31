@@ -1,10 +1,11 @@
 import Image from "next/image";
 import styles from "./landing.module.css";
+import Link from "next/link";
 
 function Landing() {
   return (
     <>
-      <div className={styles.parent}>
+      <div className={styles.parent} id="landing">
         <div className={styles.div1}>
           <video width="600" height="600" autoPlay loop className={styles.earthmp4}>
             <source src="/assets/gif/earth.mp4" type="video/mp4" />
@@ -41,8 +42,12 @@ function Landing() {
               agrupacion
             </span>
             <div className={styles.buttoncontainer}>
-              <button className={styles.btnservices}>SERVICIOS</button>
-              <button className={styles.btnaditionals}>ADICIONALES</button>
+              <button className={styles.btnservices}>
+                <Link href="#servicios">SERVICIOS</Link>
+              </button>
+              <button className={styles.btnaditionals}>
+                <Link href="#servicios">ADICIONALES</Link>
+              </button>
             </div>
           </div>
         </div>

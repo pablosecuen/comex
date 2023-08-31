@@ -63,6 +63,21 @@
     --card-border-rgb: 200, 200, 200;
   }
 }
+
+::-webkit-scrollbar {
+  width: 10px; /* Anchura de la scrollbar */
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white; /* Usar el color definido en :root */
+  border-radius: 8px; /* Borde redondeado del thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: white; /* Usar el color definido en :root */
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

@@ -10,6 +10,9 @@
   align-items: center;
   font-size: 14px;
   padding: 0px 15px 0px 15px;
+  @media (width <= 768px) {
+    display: none;
+  }
 }
 
 .navul {
@@ -78,18 +81,4 @@
   justify-content: center;
   align-items: center;
   padding: 4px;
-}
-
-.burgerbtm {
-  background-color: transparent;
-  border: none;
-  @media (width > 768px) {
-    display: none;
-  }
-}
-
-.logo2 {
-  @media (width < 768px) {
-    display: none;
-  }
 }

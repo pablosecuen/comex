@@ -6,7 +6,7 @@ import Icon from "../Icon/Icon";
 
 function Services() {
   return (
-    <section className={styles.main}>
+    <section className={styles.main} id="servicios">
       <h3 className={styles.servicestitle}>SERVICIOS</h3>
       <div className={styles.services}>
         {services.map((service, index) => (

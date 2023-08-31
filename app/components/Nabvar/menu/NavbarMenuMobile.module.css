@@ -1,0 +1,78 @@
+.navmobile {
+  position: fixed;
+  display: flex;
+  top: 62px;
+  right: -100%;
+  width: 50%;
+  height: 1000px;
+  background-color: black;
+  transition: right 1s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  @media (width > 768px) {
+    display: none;
+  }
+}
+
+.open {
+  right: 0;
+  top: 62px;
+}
+
+.navul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navul li {
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.modal {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease; /* Añade transición para max-height y opacidad */
+}
+
+.openModal {
+  max-height: 500px; /* Altura máxima para mostrar los servicios */
+  opacity: 1;
+  transition: max-height 0.5s ease, opacity 0.5s ease; /* Transición sin retardo */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+  overflow-y: scroll;
+}
+/* Estilos para mostrar los servicios con transición */
+.showServices {
+  opacity: 1;
+  max-height: 500px; /* Altura máxima para mostrar los servicios */
+  transition: opacity 0.5s ease, max-height 1s ease; /* Transición de la opacidad y altura */
+  overflow: hidden;
+}
+
+.servicecard {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.servicios {
+  opacity: 0.8;
+}

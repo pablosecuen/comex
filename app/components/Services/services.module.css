@@ -8,6 +8,9 @@
 
 .servicestitle {
   font-size: 50px;
+  @media (width < 768px) {
+    font-size: 30px;
+  }
 }
 
 .services {
@@ -17,16 +20,28 @@
   text-align: center;
   justify-content: space-between;
   gap: 20px;
+  @media (width < 768px) {
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
 }
 
 .servicecard {
-  flex: 1 1 calc(20% - 20px);
+  flex-basis: calc(20% - 20px); /* O cualquier otro valor base deseado */
   max-width: calc(33.33% - 20px);
+  min-width: 250px;
+  margin: auto;
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (width < 768px) {
+    min-width: 150px !important;
+    height: 200px;
+  }
 }
+
 .card {
   width: 200px;
   height: 250px;
@@ -39,7 +54,12 @@
   justify-content: space-between;
   gap: 4px;
   background: #cfcfcf;
-  background: linear-gradient(to top right, #976ece 0%, #000000 6%, #000000 94%, #976ece 100%);
+  background: linear-gradient(to top right, #55bbbb 0%, #000000 6%, #000000 94%, #55bbbb 100%);
+  @media (width < 768px) {
+    width: 150px;
+    height: 200px;
+    font-size: 10px;
+  }
 }
 
 .icon {
@@ -48,7 +68,13 @@
   height: 60px;
   border-radius: 100%;
   padding: 10px;
-  background: linear-gradient(45deg, rgba(223, 43, 43, 0.521), rgba(0, 128, 0, 0.476), rgba(0, 0, 255, 0.493), rgba(238, 130, 238, 0.499));
+  background: linear-gradient(
+    45deg,
+    rgba(215, 69, 69, 0.521),
+    rgba(63, 138, 63, 0.476),
+    rgba(91, 91, 228, 0.493),
+    rgba(238, 130, 238, 0.499)
+  );
   background-size: 300% 300%; /* Tamaño del gradiente */
   animation: rotateGradient 5s linear infinite; /* Animación para rotar colores */
 }

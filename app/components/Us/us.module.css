@@ -1,11 +1,15 @@
 .main {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   user-select: none;
+  @media (width < 768px) {
+    width: 100%;
+    padding: 50px 0px 100px 0px;
+  }
 }
 
 .elipse {
@@ -14,16 +18,28 @@
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: -50;
+  @media (width < 768px) {
+    width: 90%;
+    height: auto;
+  }
 }
 
 .quienessomos {
   font-size: 60px;
   padding-bottom: 50px;
+  @media (width < 768px) {
+    width: 90%;
+    text-align: center;
+    font-size: 30px;
+  }
 }
 
 .quienessomostexto {
   width: 50%;
   opacity: 0.7;
+  @media (width < 768px) {
+    width: 90%;
+  }
 }
 
 .cardcontainer {
@@ -32,6 +48,11 @@
   justify-content: space-evenly;
   padding-top: 100px;
   gap: 200px;
+  @media (width < 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 .card {
@@ -48,4 +69,7 @@
 .title {
   font-size: 30px;
   padding-bottom: 20px;
+  @media (width < 768px) {
+    font: 16px;
+  }
 }

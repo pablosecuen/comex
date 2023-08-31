@@ -1,62 +1,36 @@
 "use client";
 import Image from "next/image";
 import styles from "./navbar.module.css";
-import Link from "next/link";
 import { useState } from "react";
-import { services } from "@/app/data/data";
-import Icon from "../Icon/Icon";
+import UseAnimations from "react-useanimations";
+import menu2 from "react-useanimations/lib/menu2";
+import NavbarMenuDesktop from "./menu/NavbarMenuDesktop";
+
+import NavbarMenuMobile from "./menu/NavbarMenuMobile";
+
 const Navbar: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const handleMouseEnter = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsModalOpen(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <nav className={styles.navcontainer}>
-      <Image src="/assets/logo.svg" width={200} height={50} alt="logo" />
-      <ul className={styles.navul}>
-        <Link href="">
-          <li>HOME</li>
-        </Link>
-        <Link href="">
-          <li>NOSOTROS</li>
-        </Link>
-        <Link href="">
-          <li onMouseEnter={handleMouseEnter}>
-            SERVICIOS
-            {isModalOpen && (
-              <div className={styles.modal} onMouseLeave={handleMouseLeave}>
-                {/* Contenido del menú secundario */}
-                {services.map((service, index) => (
-                  <div className={styles.servicecard} key={index}>
-                    <div className={styles.icon}>
-                      <div className={styles.innerCircle}>
-                        <Icon icon={service.icon()} className={styles.icon1} />
-                      </div>
-                    </div>
-                    <div className={styles.card}>
-                      <span className={styles.servicios}>{service.servicio}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </li>
-        </Link>
-        <Link href="">
-          <li>ENLACES</li>
-        </Link>
-        <Link href="">
-          <li>CONTACTO</li>
-        </Link>
-      </ul>
-      <Image src="/assets/logo.svg" width={200} height={50} alt="logo" />
-    </nav>
+    <header>
+      <div className={styles.navcontainer}>
+        <Image src="/assets/logo.svg" width={200} height={50} alt="logo" />
+        <button
+          onClick={toggleMenu}
+          className={`${styles["animation-container"]} ${styles.burgerbtm}`}
+        >
+          <UseAnimations animation={menu2} size={50} fillColor="#55bbbb" strokeColor="#55bbbb" />
+        </button>
+        <NavbarMenuDesktop />
+        <Image src="/assets/logo.svg" width={200} height={50} alt="logo" className={styles.logo2} />
+      </div>
+      <NavbarMenuMobile isOpen={isMenuOpen} toggleMenu={toggleMenu} />
+    </header>
   );
 };
 

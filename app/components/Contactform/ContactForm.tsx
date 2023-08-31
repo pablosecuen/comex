@@ -3,7 +3,7 @@ import style from "./contactform.module.css";
 
 function ContactForm() {
   return (
-    <section id="contact" className={style.main}>
+    <section id="contacto" className={style.main}>
       <div className={style.leftcontainer}>
         <Image
           src="/assets/img/containers.png"

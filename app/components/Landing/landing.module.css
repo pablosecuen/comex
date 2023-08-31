@@ -6,6 +6,11 @@
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  @media (width < 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
 }
 
 .div1 {
@@ -17,6 +22,14 @@
 
 .earthmp4 {
   user-select: none;
+  @media (width < 768px) {
+    position: absolute;
+    top: 0;
+    width: 130%;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: -10;
+  }
 }
 .div2 {
   grid-area: 1 / 3 / 4 / 4;
@@ -33,6 +46,9 @@
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
+  @media (width < 768px) {
+    display: none;
+  }
 }
 
 .guypic {
@@ -42,6 +58,11 @@
   transform: translateX(-50%);
   z-index: 1;
   width: auto;
+  @media (width < 768px) {
+    width: 100%;
+    height: auto;
+    top: 200px;
+  }
 }
 
 .div3 {
@@ -50,6 +71,11 @@
   display: flex;
   justify-content: end;
   align-items: center;
+  @media (width < 768px) {
+    position: absolute;
+    top: 10%;
+    right: 0;
+  }
 }
 
 .presupuestos {
@@ -74,6 +100,9 @@
   transform: rotate(270deg);
   transform-origin: left bottom;
   margin-bottom: -300px;
+  @media (width < 768px) {
+    display: none;
+  }
 }
 
 .div5 {
@@ -81,6 +110,11 @@
   display: flex;
   justify-content: start;
   align-items: center;
+  @media (width < 768px) {
+    position: absolute;
+    top: 130px;
+    left: 0;
+  }
 }
 
 .square {
@@ -89,12 +123,16 @@
 
 .div6 {
   grid-area: 2 / 4 / 3 / 6;
-
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (width < 768px) {
+    position: absolute;
+    bottom: 0px;
+    transform: scale(0.7);
+  }
 }
 
 .card {

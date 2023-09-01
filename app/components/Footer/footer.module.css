@@ -110,8 +110,8 @@
 }
 
 .icon1 {
-  font-size: 50px;
-  margin-top: 8px;
+  font-size: 48px;
+  margin-top: 10px;
   padding: 10px 0px 0px 0px;
   & :hover {
     cursor: pointer;

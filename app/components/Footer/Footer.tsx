@@ -53,21 +53,21 @@ function Footer() {
             <Icon icon={<AiOutlineMail />} className={style.icon1} />
             <UseAnimations
               animation={facebook}
-              size={56}
+              size={50}
               className={style.icon}
               fillColor="#ffffff"
               strokeColor="#ffffff"
             />
             <UseAnimations
               animation={linkedin}
-              size={56}
+              size={50}
               className={style.icon}
               fillColor="#ffffff"
               strokeColor="#ffffff"
             />
             <UseAnimations
               animation={instagram}
-              size={56}
+              size={50}
               className={style.icon}
               fillColor="#ffffff"
               strokeColor="#ffffff"

@@ -9,7 +9,7 @@ import handleNavItemClick from "@/app/customHook/handleNavItemClick";
 
 const NavbarMenuDesktop: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isLinksOpen, setIsLinksOpen] = useState(true);
+  const [isLinksOpen, setIsLinksOpen] = useState(false);
 
   const handleMouseEnter = () => {
     setIsModalOpen(true);

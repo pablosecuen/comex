@@ -3,12 +3,13 @@ import Image from "next/image";
 import styles from "./NavbarMenuDesktop.module.css";
 import Link from "next/link";
 import { useState } from "react";
-import { services } from "@/app/data/data";
+import { services, enlaces } from "@/app/data/data";
 import Icon from "../../Icon/Icon";
 import handleNavItemClick from "@/app/customHook/handleNavItemClick";
 
 const NavbarMenuDesktop: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLinksOpen, setIsLinksOpen] = useState(true);
 
   const handleMouseEnter = () => {
     setIsModalOpen(true);
@@ -16,6 +17,14 @@ const NavbarMenuDesktop: React.FC = () => {
 
   const handleMouseLeave = () => {
     setIsModalOpen(false);
+  };
+
+  const handleMouseEnterLinks = () => {
+    setIsLinksOpen(true);
+  };
+
+  const handleMouseLeaveLinks = () => {
+    setIsLinksOpen(false);
   };
 
   return (
@@ -28,7 +37,7 @@ const NavbarMenuDesktop: React.FC = () => {
           <li>NOSOTROS</li>
         </Link>
         <Link href="#servicios" onClick={(e) => handleNavItemClick(e, "servicios")}>
-          <li onMouseEnter={handleMouseEnter}>
+          <li onMouseEnter={handleMouseEnter} className={styles.serviciosli}>
             SERVICIOS
             {isModalOpen && (
               <div className={styles.modal} onMouseLeave={handleMouseLeave}>
@@ -49,9 +58,32 @@ const NavbarMenuDesktop: React.FC = () => {
             )}
           </li>
         </Link>
-        <Link href="#enlaces" onClick={(e) => handleNavItemClick(e, "enlaces")}>
-          <li>ENLACES</li>
-        </Link>
+
+        <li onMouseEnter={handleMouseEnterLinks} className={styles.enlacesli}>
+          ENLACES
+          {isLinksOpen && (
+            <div className={styles.modal2} onMouseLeave={handleMouseLeaveLinks}>
+              {enlaces.map((enlaces, index) => (
+                <div className={styles.linkscard} key={index}>
+                  <ul className={styles.ul}>
+                    <li>
+                      <a
+                        href={enlaces.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={styles.links}
+                      >
+                        <Image src={enlaces.icon} width={60} height={60} alt="icono" />
+                        {enlaces.name}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              ))}
+            </div>
+          )}
+        </li>
+
         <Link href="#contacto" onClick={(e) => handleNavItemClick(e, "contacto")}>
           <li>CONTACTO</li>
         </Link>

@@ -15,13 +15,13 @@ export default function Home() {
           <span>
             <div className={styles.bannernumber}>
               <p className={styles.bannerp}>+</p>
-              <p className={styles.bannernumber}>150</p>
+              <p className={styles.bannernumber}>20</p>
             </div>
           </span>
           <div className={styles.bannertext}>
             <span>CLIENTES</span>
             <span>
-              <strong>SATISFECHOS</strong>
+              <strong>ACTIVOS</strong>
             </span>
           </div>
         </div>
@@ -43,13 +43,13 @@ export default function Home() {
           <span>
             <div className={styles.bannernumber}>
               <p className={styles.bannerp}>+</p>
-              <p className={styles.bannernumber}>10000</p>
+              <p className={styles.bannernumber}>175</p>
             </div>
           </span>
           <div className={styles.bannertext}>
             <span>OPERACIONES</span>
             <span>
-              <strong>REALIZADAS</strong>
+              <strong>ANUALES</strong>
             </span>
           </div>
         </div>

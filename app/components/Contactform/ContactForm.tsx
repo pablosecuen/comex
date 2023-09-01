@@ -35,13 +35,7 @@ function ContactForm() {
             />
           </div>
           <div className={style["form-item"]}>
-            <input
-              type="text"
-              name="sender"
-              required
-              className={style.input}
-              placeholder="Nombre"
-            />
+            <input type="text" name="name" required className={style.input} placeholder="Nombre" />
           </div>
           <div className={style["form-item"]}>
             <input type="text" name="email" required className={style.input} placeholder="E-mail" />

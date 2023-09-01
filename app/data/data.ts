@@ -1,6 +1,10 @@
 import {BiSolidShip} from 'react-icons/bi'
 import {FcAssistant,FcApproval,FcCloth,FcCandleSticks,FcAddressBook,FcShipped, FcFile, FcImageFile, FcKindle, FcMultipleInputs, FcHighPriority, FcCollect, FcTimeline, FcCollaboration} from 'react-icons/fc'
-
+import afip from '@/public/assets/enlacesLogos/afip.svg'
+import agadmin from '@/public/assets/enlacesLogos/agmin.svg'
+import agadmin2 from '@/public/assets/enlacesLogos/agmin2.svg'
+import bna from '@/public/assets/enlacesLogos/bna.svg'
+import senasa from '@/public/assets/enlacesLogos/senasa.svg'
 
 export const services = [
     {
@@ -77,7 +81,11 @@ export const services = [
                             },
 ]
 
-export const extraservices = [
-
-
+export const enlaces = [
+    {name:'AFIP', link:'https://www.afip.gob.ar/landing/default.asp', icon: afip},
+    {name:'SENASA', link:'https://www.argentina.gob.ar/senasa', icon: senasa},
+    {name:'AGADMIN', link:'https://www.agroindustria.gob.ar/sitio/areas/cuotasyregistros/', icon: agadmin},
+    {name:'AGADMIN2', link:'https://dinem.agroindustria.gob.ar/dinem_fob.wp_fob_consall.aspx', icon: agadmin2},
+    {name:'BNA', link:'https://www.bna.com.ar/Personas', icon: bna},
+    
 ]

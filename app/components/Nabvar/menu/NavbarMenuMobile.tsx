@@ -3,11 +3,13 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./NavbarMenuMobile.module.css";
 import handleNavItemClick from "@/app/customHook/handleNavItemClick";
-import { services } from "@/app/data/data";
+import { services, enlaces } from "@/app/data/data";
 import Icon from "../../Icon/Icon";
+import Image from "next/image";
 
 const NavbarMenuMobile: React.FC<NavbarMenuMobileProps> = ({ isOpen, toggleMenu }) => {
   const [showServices, setShowServices] = useState(false);
+  const [showEnlaces, setShowEnlaces] = useState(false);
 
   useEffect(() => {
     setShowServices(isOpen);
@@ -16,6 +18,10 @@ const NavbarMenuMobile: React.FC<NavbarMenuMobileProps> = ({ isOpen, toggleMenu 
 
   const handleSummaryClick = () => {
     setShowServices(!showServices);
+  };
+
+  const handleSummaryClick2 = () => {
+    setShowEnlaces(!showEnlaces);
   };
 
   return (
@@ -51,9 +57,27 @@ const NavbarMenuMobile: React.FC<NavbarMenuMobileProps> = ({ isOpen, toggleMenu 
             </details>
           </li>
 
-          <Link href="#enlaces" onClick={(e) => handleNavItemClick(e, "enlaces")}>
-            <li>ENLACES</li>
-          </Link>
+          <li>
+            <details open={showEnlaces} onToggle={handleSummaryClick2}>
+              <summary>ENLACES</summary>
+              <div className={`${styles.modal} ${showEnlaces ? styles.openModal : ""}`}>
+                {enlaces.map((enlace, index) => (
+                  <div className={styles.servicecard2} key={index}>
+                    <div className={styles.icon2}>
+                      <div className={styles.innerCircle2}>
+                        <Link href={enlace.link}>
+                          {" "}
+                          <Image src={enlace.icon} width={60} height={40} alt="icono" />
+                        </Link>
+                      </div>
+                    </div>
+                    <div className={styles.card2}></div>
+                  </div>
+                ))}
+              </div>
+            </details>
+          </li>
+
           <Link href="#contacto" onClick={(e) => handleNavItemClick(e, "contacto")}>
             <li>CONTACTO</li>
           </Link>

@@ -1,9 +1,14 @@
+"use client";
 import React from "react";
 import style from "./footer.module.css";
 
-import { AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 import Icon from "../Icon/Icon";
+import UseAnimations from "react-useanimations";
+import facebook from "react-useanimations/lib/facebook";
+import linkedin from "react-useanimations/lib/linkedin";
+import instagram from "react-useanimations/lib/instagram";
 
 function Footer() {
   return (
@@ -43,11 +48,30 @@ function Footer() {
           <button className={style.btn}>✓</button>
         </div>
         <div className={style.div5}>
-          <h5>SEGUINOS</h5>
+          <h5 className={style.seguinos}>SEGUINOS</h5>
           <div className={style.iconmobile}>
-            <Icon icon={<BsInstagram />} className={style.icon} />
-            <Icon icon={<AiOutlineMail />} className={style.icon} />
-            <Icon icon={<AiFillLinkedin />} className={style.icon} />
+            <Icon icon={<AiOutlineMail />} className={style.icon1} />
+            <UseAnimations
+              animation={facebook}
+              size={56}
+              className={style.icon}
+              fillColor="#ffffff"
+              strokeColor="#ffffff"
+            />
+            <UseAnimations
+              animation={linkedin}
+              size={56}
+              className={style.icon}
+              fillColor="#ffffff"
+              strokeColor="#ffffff"
+            />
+            <UseAnimations
+              animation={instagram}
+              size={56}
+              className={style.icon}
+              fillColor="#ffffff"
+              strokeColor="#ffffff"
+            />
           </div>
         </div>
       </div>

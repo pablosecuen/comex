@@ -101,7 +101,17 @@
 }
 
 .icon {
-  font-size: 40px;
+  font-size: 50px;
+  padding: 10px 0px 0px 0px;
+
+  & :hover {
+    cursor: pointer;
+  }
+}
+
+.icon1 {
+  font-size: 50px;
+  margin-top: 8px;
   padding: 10px 0px 0px 0px;
   & :hover {
     cursor: pointer;
@@ -138,8 +148,14 @@
 }
 
 .iconmobile {
+  display: flex;
   @media (width < 768px) {
     display: flex;
     flex-direction: row;
   }
+}
+
+.seguinos {
+  font-size: 20px;
+  margin-top: 20px;
 }

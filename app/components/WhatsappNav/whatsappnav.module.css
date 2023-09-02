@@ -1,0 +1,36 @@
+.container {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: auto;
+  border-radius: 50px;
+  border: 2px white solid;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 10px 15px 5px 15px;
+}
+
+.whatsapp {
+  flex: 1;
+  font-size: 30px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.mail {
+  flex: 1;
+  font-size: 30px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.top {
+  flex: 1;
+  font-size: 30px;
+  &:hover {
+    cursor: pointer;
+  }
+}

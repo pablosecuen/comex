@@ -33,9 +33,6 @@ const NavbarMenuDesktop: React.FC = () => {
         <Link href="#landing" onClick={(e) => handleNavItemClick(e, "landing")}>
           <li>HOME</li>
         </Link>
-        <Link href="#nosotros" onClick={(e) => handleNavItemClick(e, "nosotros")}>
-          <li>NOSOTROS</li>
-        </Link>
         <Link href="#servicios" onClick={(e) => handleNavItemClick(e, "servicios")}>
           <li onMouseEnter={handleMouseEnter} className={styles.serviciosli}>
             SERVICIOS
@@ -57,6 +54,9 @@ const NavbarMenuDesktop: React.FC = () => {
               </div>
             )}
           </li>
+        </Link>
+        <Link href="#nosotros" onClick={(e) => handleNavItemClick(e, "nosotros")}>
+          <li>NOSOTROS</li>
         </Link>
 
         <li onMouseEnter={handleMouseEnterLinks} className={styles.enlacesli}>
@@ -83,7 +83,6 @@ const NavbarMenuDesktop: React.FC = () => {
             </div>
           )}
         </li>
-
         <Link href="#contacto" onClick={(e) => handleNavItemClick(e, "contacto")}>
           <li>CONTACTO</li>
         </Link>

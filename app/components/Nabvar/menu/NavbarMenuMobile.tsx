@@ -33,10 +33,6 @@ const NavbarMenuMobile: React.FC<NavbarMenuMobileProps> = ({ isOpen, toggleMenu 
           <Link href="#landing" onClick={(e) => handleNavItemClick(e, "landing")}>
             <li>HOME</li>
           </Link>
-          <Link href="#nosotros" onClick={(e) => handleNavItemClick(e, "nosotros")}>
-            <li>NOSOTROS</li>
-          </Link>
-
           <li>
             <details open={showServices} onToggle={handleSummaryClick}>
               <summary>SERVICIOS</summary>
@@ -56,6 +52,9 @@ const NavbarMenuMobile: React.FC<NavbarMenuMobileProps> = ({ isOpen, toggleMenu 
               </div>
             </details>
           </li>
+          <Link href="#nosotros" onClick={(e) => handleNavItemClick(e, "nosotros")}>
+            <li>NOSOTROS</li>
+          </Link>
 
           <li>
             <details open={showEnlaces} onToggle={handleSummaryClick2}>

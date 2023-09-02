@@ -3,12 +3,12 @@ import React from "react";
 import style from "./footer.module.css";
 
 import { AiOutlineMail } from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
 import Icon from "../Icon/Icon";
 import UseAnimations from "react-useanimations";
 import facebook from "react-useanimations/lib/facebook";
 import linkedin from "react-useanimations/lib/linkedin";
 import instagram from "react-useanimations/lib/instagram";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -50,7 +50,9 @@ function Footer() {
         <div className={style.div5}>
           <h5 className={style.seguinos}>SEGUINOS</h5>
           <div className={style.iconmobile}>
-            <Icon icon={<AiOutlineMail />} className={style.icon1} />
+            <Link href="mailto:info@paranacomex.com.ar" target="_blank">
+              <Icon icon={<AiOutlineMail />} className={style.icon1} />
+            </Link>
             <UseAnimations
               animation={facebook}
               size={50}

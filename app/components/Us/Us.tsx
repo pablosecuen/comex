@@ -14,7 +14,23 @@ function Us() {
           alt="elipse"
           className={styles.elipse}
         />
-        <h3 className={styles.quienessomos}>QUIENES SOMOS</h3>
+        <Image
+          src="/assets/elipse/Design.png"
+          width={1100}
+          height={500}
+          alt="elipse"
+          className={styles.elipse2}
+        />
+        <Image
+          src="/assets/elipse/Design.png"
+          width={1100}
+          height={500}
+          alt="elipse"
+          className={styles.elipse3}
+        />
+        <h3 className={styles.quienessomos}>
+          QUIENES <p className={styles.somos}>SOMOS</p>
+        </h3>
         <span className={styles.quienessomostexto}>
           En el año 2012, Fernando Pfleiderer y Eduardo Rizzuto deciden asociarse para crear Parana
           Comex, una empresa joven, innovadora y con gran competitividad en el mercado del Comercio

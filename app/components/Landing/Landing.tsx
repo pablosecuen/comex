@@ -7,7 +7,7 @@ function Landing() {
     <>
       <div className={styles.parent} id="landing">
         <div className={styles.div1}>
-          <video width="600" height="600" autoPlay loop className={styles.earthmp4}>
+          <video width="600" height="600" autoPlay loop muted className={styles.earthmp4}>
             <source src="/assets/gif/earth.mp4" type="video/mp4" />
           </video>
         </div>

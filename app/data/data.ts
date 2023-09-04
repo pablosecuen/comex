@@ -8,77 +8,96 @@ import senasa from '@/public/assets/enlacesLogos/senasa.svg'
 
 export const services = [
     {
-        servicio: 'Operaciones en Depósitos Fiscales, Plantas y Terminales Portuarias',
+        title:"Operaciones",
+        servicio: 'Depósitos Fiscales, Plantas y Terminales Portuarias',
         icon: BiSolidShip
     },
     {
-        servicio: 'Corresponsalías en aduanas de Buenos Aires, Ezeiza, Campana y Santa Fe.',
+        title:"Corresponsalias",
+        servicio: 'aduanas de Buenos Aires, Ezeiza, Campana y Santa Fe.',
         icon: FcShipped
     },
     {
-        servicio: 'Gestión de Permisos de Exportación y Despachos de Importación, Temporales, Tránsitos.',
+        title:"Gestión",
+        servicio: 'Permisos Exportación y Despachos de Importación, Temporales, Tránsitos.',
         icon: FcFile
     },
     {
-        servicio: 'Inscripción en AFIP como Exportador / Importador.',
+        title:"Inscripciónes",
+        servicio: 'AFIP como Exportador / Importador.',
         icon: FcImageFile
     },
     {
+        
+         title:"Trámites",
         servicio: 'Tramitación de DJVE.',
         icon: FcKindle
     },
     {
+         title:"Trámites",
         servicio: 'Tramitación de SIMI y Licencias No Automáticas.',
         icon: FcKindle
     },
     {
-        servicio: 'Operaciones en Depósitos Fiscales, Plantas y Terminales Portuarias.',
+         title:"Operaciones",
+        servicio: 'Depósitos Fiscales, Plantas y Terminales Portuarias.',
         icon: FcMultipleInputs
     },
     {
-        servicio: 'Corresponsalías en aduanas de Buenos Aires, Ezeiza, Campana y Santa Fe.',
+         title:"Corresponsalías",
+        servicio: 'en aduanas de Buenos Aires, Ezeiza, Campana y Santa Fe.',
         icon: FcShipped
     },
     {
+         title:"Permisos",
         servicio: 'Cancelación de Permisos de Embarque en consignación.',
         icon: FcHighPriority
     },
     {
+         title:"Despachos",
         servicio: 'Envío e ingreso de muestras.',
         icon: FcCollect
     },
     {
-        servicio: 'Conexión con Depósitos Fiscales, Plantas, Terminales',
+         title:"Conexiones",
+        servicio: 'Depósitos Fiscales, Plantas, Terminales',
         icon: FcTimeline
     },
     {
+        title:"Operaciones",
         servicio: 'Portuarias y Aeroportuarias.',
         icon: FcCollaboration
     },
     {
-        servicio: 'Gestión y tramitación de documentación ante Organismos Oficiales y Cámaras de Comercio.',
+        title:"Trámites",
+        servicio: 'Documentación ante Organismos Oficiales y Cámaras de Comercio.',
         icon:FcAddressBook
-        },
-        {
-            servicio: 'Coordinación con empresas de control y fumigación.',
-            icon:FcCandleSticks
-            },
-            {
-                servicio: 'Contacto con forwarders, líneas marítimas. Contratación de fletes nacionales e internacionales.',
-                icon:FcCloth
-                },
-                {
-                    servicio: 'Asesoramiento sobre aspectos generales de la operación a proveedores y compradores del exterior.',
-                    icon:FcAddressBook
-                    },
-                    {
-                        servicio: 'Seguros para todo tipo de cargas.',
-                        icon:FcApproval
-                        },
-                        {
-                            servicio: 'Asesoramiento sobre pequeños envíos.',
-                            icon:FcAssistant
-                            },
+    },
+    {
+        title:"Trámites",
+        servicio: 'Coordinación con empresas de control y fumigación.',
+        icon:FcCandleSticks
+    },
+    {
+        title:"Gestión",
+        servicio: 'Contacto con forwarders, líneas marítimas. Contratación de fletes nacionales e internacionales.',
+        icon:FcCloth
+    }, 
+    {
+        title:"Asesoramiento",
+        servicio: 'Sobre aspectos generales de la operación a proveedores y compradores del exterior.',
+        icon:FcAddressBook
+    },
+    {
+        title:"Trámites",
+        servicio: 'Seguros para todo tipo de cargas.',
+        icon:FcApproval
+    },
+    {
+        title:"Asesoramiento",
+        servicio: 'Sobre pequeños envíos.',
+        icon:FcAssistant
+    },
 ]
 
 export const enlaces = [

@@ -15,7 +15,7 @@
 }
 
 .services {
-  padding: 50px;
+  padding: 50px 0px 50px 0px;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -37,61 +37,63 @@
 .servicecard {
   flex-basis: calc(20% - 20px); /* O cualquier otro valor base deseado */
   max-width: calc(33.33% - 20px);
-  min-width: 250px;
+  min-width: 200px;
+  max-width: 220px;
+  border: 2.5px white solid;
   margin: auto;
-  height: 300px;
+  height: 230px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 0px 8px 0px 8px;
+  flex-direction: column;
   align-items: center;
+  position: relative;
   @media (width < 768px) {
     min-width: 150px !important;
     height: 200px;
   }
 }
 
-.card {
-  width: 200px;
-  height: 250px;
-  padding: 10px;
-  box-shadow: 7px 5px 25px rgba(151, 110, 206, 0.2);
-  border-radius: 10px;
+.square {
+  background-color: white;
+  padding: 2px;
+  color: black;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 4px;
-  background: #cfcfcf;
-  background: linear-gradient(to top right, #55bbbb 0%, #000000 6%, #000000 94%, #55bbbb 100%);
+  font-size: 16px;
+  gap: 5px;
   @media (width < 768px) {
-    width: 150px;
-    height: 200px;
-    font-size: 10px;
+    font-size: 14px;
   }
+}
+.number {
+  color: #55bbbb;
 }
 
 .icon {
   position: relative;
   width: 60px;
   height: 60px;
-  border-radius: 100%;
   padding: 10px;
-  background: linear-gradient(
-    45deg,
-    rgba(215, 69, 69, 0.521),
-    rgba(63, 138, 63, 0.476),
-    rgba(91, 91, 228, 0.493),
-    rgba(238, 130, 238, 0.499)
-  );
   background-size: 300% 300%; /* Tamaño del gradiente */
   animation: rotateGradient 5s linear infinite; /* Animación para rotar colores */
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #55bbbb;
+  font-size: 20px;
 }
 
 .innerCircle {
   position: absolute;
   width: 90%;
   height: 90%;
-  border-radius: 100%;
-  background-color: black;
   top: 10%;
   left: 10%;
   transform: translate(-5%, -5%);
@@ -118,6 +120,10 @@
 
 .servicios {
   font-weight: 200;
+  font-size: 14px;
+  @media (width < 768px) {
+    font-size: 12px;
+  }
 }
 
 .icon1 {
@@ -128,6 +134,9 @@
 .button1 {
   padding: 4px 8px 4px 8px;
   margin-bottom: 10px;
+  background-color: #55bbbb;
+  border: none;
+  padding: 10px 20px 10px 20px;
   &:hover {
     cursor: pointer;
   }

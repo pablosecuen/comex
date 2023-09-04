@@ -11,15 +11,17 @@ function Services() {
       <div className={styles.services}>
         {services.map((service, index) => (
           <div className={styles.servicecard} key={index}>
-            <div className={styles.card}>
-              <div className={styles.icon}>
-                <div className={styles.innerCircle}>
-                  <Icon icon={service.icon()} className={styles.icon1} />
-                </div>
+            <div className={styles.square}>.{String(index + 1).padStart(2, "0")}</div>
+            <div className={styles.icon}>
+              <div className={styles.innerCircle}>
+                <strong className={styles.title}>
+                  {service.title.toLocaleUpperCase()}
+                  <p className={styles.number}>{String(index + 1).padStart(2, "0")}</p>
+                </strong>
               </div>
-              <span className={styles.servicios}>{service.servicio}</span>
-              <button className={styles.button1}>MAS INFO</button>
             </div>
+            <span className={styles.servicios}>{service.servicio}</span>
+            <button className={styles.button1}>MAS INFO</button>
           </div>
         ))}
       </div>

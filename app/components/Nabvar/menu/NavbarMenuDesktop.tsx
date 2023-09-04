@@ -4,7 +4,6 @@ import styles from "./NavbarMenuDesktop.module.css";
 import Link from "next/link";
 import { useState } from "react";
 import { services, enlaces } from "@/app/data/data";
-import Icon from "../../Icon/Icon";
 import handleNavItemClick from "@/app/customHook/handleNavItemClick";
 
 const NavbarMenuDesktop: React.FC = () => {

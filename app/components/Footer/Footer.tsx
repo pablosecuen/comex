@@ -8,7 +8,6 @@ import UseAnimations from "react-useanimations";
 import facebook from "react-useanimations/lib/facebook";
 import linkedin from "react-useanimations/lib/linkedin";
 import instagram from "react-useanimations/lib/instagram";
-import handleNavItemClick from "@/app/customHook/handleNavItemClick";
 
 function Footer() {
   return (
@@ -19,7 +18,7 @@ function Footer() {
             {" "}
             <h5 className={style.h5}>SERVICIOS</h5>
             <ul className={style.ul}>
-              <Link href="#servicios" onClick={(e) => handleNavItemClick(e, "servicios")}>
+              <Link href="#servicios">
                 <li className={style.li}>Operaciones</li>
                 <li className={style.li}>Conexiones</li>
                 <li className={style.li}>Corresponsalias</li>
@@ -32,7 +31,7 @@ function Footer() {
             {" "}
             <h5 className={style.h5}>NOSOTROS</h5>
             <ul className={style.ul}>
-              <Link href="#nosotros" onClick={(e) => handleNavItemClick(e, "nosotros")}>
+              <Link href="#nosotros">
                 <li className={style.li}>Quienes somos?</li>
                 <li className={style.li}>Nuestros valores</li>
                 <li className={style.li}>Nuestra mision</li>

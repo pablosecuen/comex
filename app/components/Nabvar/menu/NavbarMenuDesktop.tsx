@@ -4,7 +4,6 @@ import styles from "./NavbarMenuDesktop.module.css";
 import Link from "next/link";
 import { useState } from "react";
 import { services, enlaces } from "@/app/data/data";
-import handleNavItemClick from "@/app/customHook/handleNavItemClick";
 
 const NavbarMenuDesktop: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,10 +28,10 @@ const NavbarMenuDesktop: React.FC = () => {
   return (
     <nav className={styles.navcontainer}>
       <ul className={styles.navul}>
-        <Link href="#landing" onClick={(e) => handleNavItemClick(e, "landing")}>
+        <Link href="#landing">
           <li>HOME</li>
         </Link>
-        <Link href="#servicios" onClick={(e) => handleNavItemClick(e, "servicios")}>
+        <Link href="#servicios">
           <li onMouseEnter={handleMouseEnter} className={styles.serviciosli}>
             SERVICIOS
             {isModalOpen && (
@@ -54,7 +53,7 @@ const NavbarMenuDesktop: React.FC = () => {
             )}
           </li>
         </Link>
-        <Link href="#nosotros" onClick={(e) => handleNavItemClick(e, "nosotros")}>
+        <Link href="#nosotros">
           <li>NOSOTROS</li>
         </Link>
 
@@ -82,7 +81,7 @@ const NavbarMenuDesktop: React.FC = () => {
             </div>
           )}
         </li>
-        <Link href="#contacto" onClick={(e) => handleNavItemClick(e, "contacto")}>
+        <Link href="#contacto">
           <li>CONTACTO</li>
         </Link>
       </ul>

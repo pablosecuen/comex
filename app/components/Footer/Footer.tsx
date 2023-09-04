@@ -59,21 +59,21 @@ function Footer() {
             </Link>
             <UseAnimations
               animation={facebook}
-              size={50}
+              size={56}
               className={style.icon}
               fillColor="#ffffff"
               strokeColor="#ffffff"
             />
             <UseAnimations
               animation={linkedin}
-              size={50}
+              size={56}
               className={style.icon}
               fillColor="#ffffff"
               strokeColor="#ffffff"
             />
             <UseAnimations
               animation={instagram}
-              size={50}
+              size={56}
               className={style.icon}
               fillColor="#ffffff"
               strokeColor="#ffffff"

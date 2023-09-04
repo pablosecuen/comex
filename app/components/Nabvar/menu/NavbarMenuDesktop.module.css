@@ -5,7 +5,7 @@
   width: 100vw;
   height: 4rem;
   background-color: transparent;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(100%);
   z-index: 50;
   align-items: center;
   font-size: 14px;
@@ -37,8 +37,8 @@
 .modal {
   position: absolute;
   top: 30px;
-  height: 500px;
-  width: 700px;
+  height: auto;
+  width: 750px;
   right: 50%;
   transform: translate(50%);
   display: flex;
@@ -58,9 +58,14 @@
 .servicecard {
   border-radius: 2px;
   display: flex;
+  flex-direction: column;
+  width: 130px;
+  height: 140px;
   gap: 4px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  border: 0.5px solid white;
 }
 
 .card {
@@ -69,7 +74,6 @@
   min-height: 100px;
   justify-content: center;
   align-items: center;
-  border: 0.5px solid white;
   border-radius: 5px;
   &:hover {
     cursor: pointer;
@@ -78,6 +82,11 @@
 
 .icon {
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 
 .servicios {
@@ -85,6 +94,8 @@
   justify-content: center;
   align-items: center;
   padding: 4px;
+  text-align: center;
+  font-size: 12px;
 }
 
 .linkscard {
@@ -135,4 +146,18 @@
   &:hover {
     cursor: pointer;
   }
+}
+
+.categoria {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 12px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #55bbbb;
+  padding-bottom: 6px;
 }

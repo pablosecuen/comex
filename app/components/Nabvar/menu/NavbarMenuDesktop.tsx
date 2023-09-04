@@ -42,9 +42,9 @@ const NavbarMenuDesktop: React.FC = () => {
                 {services.map((service, index) => (
                   <div className={styles.servicecard} key={index}>
                     <div className={styles.icon}>
-                      <div className={styles.innerCircle}>
-                        <Icon icon={service.icon()} className={styles.icon1} />
-                      </div>
+                      <strong>
+                        <p className={styles.title}> {service.title.toLocaleUpperCase()}</p>
+                      </strong>
                     </div>
                     <div className={styles.card}>
                       <span className={styles.servicios}>{service.servicio}</span>

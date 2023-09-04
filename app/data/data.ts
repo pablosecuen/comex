@@ -5,6 +5,7 @@ import agadmin from '@/public/assets/enlacesLogos/agmin.svg'
 import agadmin2 from '@/public/assets/enlacesLogos/agmin2.svg'
 import bna from '@/public/assets/enlacesLogos/bna.svg'
 import senasa from '@/public/assets/enlacesLogos/senasa.svg'
+import { IService } from '../types/Services'
 
 export const services = [
     {
@@ -80,7 +81,12 @@ export const services = [
     },
     {
         title:"Gestión",
-        servicio: 'Contacto con forwarders, líneas marítimas. Contratación de fletes nacionales e internacionales.',
+        servicio: 'Contacto con forwarders, líneas marítimas.',
+        icon:FcCloth
+    }, 
+    {
+        title:"Gestión",
+        servicio: 'Contratación de fletes nacionales e internacionales.',
         icon:FcCloth
     }, 
     {
@@ -108,3 +114,15 @@ export const enlaces = [
     {name:'BNA', link:'https://www.bna.com.ar/Personas', icon: bna},
     
 ]
+
+
+export const serviciosPorCategoria: { [key: string]: IService[] } = services.reduce((acc, service) => {
+    const categoria = service.title;
+    if (!acc[categoria]) {
+      acc[categoria] = [];
+    }
+    acc[categoria].push(service);
+    return acc;
+  }, {} as { [key: string]: IService[] }); 
+  
+  // Resto del código...

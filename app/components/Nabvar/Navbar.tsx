@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
   return (
     <header>
       <div className={styles.navcontainer}>
-        <Image src="/assets/logo.svg" width={200} height={50} alt="logo" />
+        <Image src="/assets/logo.svg" width={150} height={50} alt="logo" />
         <button
           onClick={toggleMenu}
           className={`${styles["animation-container"]} ${styles.burgerbtm}`}
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
           <UseAnimations animation={menu2} size={50} fillColor="#55bbbb" strokeColor="#55bbbb" />
         </button>
         <NavbarMenuDesktop />
-        <Image src="/assets/logo.svg" width={200} height={50} alt="logo" className={styles.logo2} />
+        <Image src="/assets/logo.svg" width={150} height={50} alt="logo" className={styles.logo2} />
       </div>
       <NavbarMenuMobile isOpen={isMenuOpen} toggleMenu={toggleMenu} />
     </header>

@@ -2,7 +2,6 @@
 import React from "react";
 import styles from "./services.module.css";
 import { services } from "@/app/data/data";
-import Icon from "../Icon/Icon";
 
 function Services() {
   return (

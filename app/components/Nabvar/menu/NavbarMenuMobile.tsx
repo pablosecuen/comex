@@ -5,6 +5,7 @@ import styles from "./NavbarMenuMobile.module.css";
 import { services, enlaces } from "@/app/data/data";
 import Icon from "../../Icon/Icon";
 import Image from "next/image";
+import { NavbarMenuMobileProps } from "@/app/types/NavbarMenuMobileProps";
 
 const NavbarMenuMobile: React.FC<NavbarMenuMobileProps> = ({ isOpen, toggleMenu }) => {
   const [showServices, setShowServices] = useState(false);

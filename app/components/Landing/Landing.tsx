@@ -18,6 +18,7 @@ function Landing() {
             width={1200}
             height={400}
             className={styles.guypic}
+            loading="eager"
           ></Image>
           <div className={styles.purplecircle}></div>
         </div>

@@ -83,12 +83,14 @@
   src: url("../public/assets/fonts/BebasNeue-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "roboto";
   src: url("../public/assets/fonts/Roboto-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 h1,

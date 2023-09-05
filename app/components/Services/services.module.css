@@ -11,6 +11,7 @@
   filter: drop-shadow(7px 5px 7px rgba(85, 187, 187, 0.4));
   @media (width < 768px) {
     font-size: 30px;
+    padding-bottom: 50px;
   }
 }
 
@@ -31,6 +32,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     gap: 5px;
+    padding: 0px 10px 0px 10px;
   }
 }
 

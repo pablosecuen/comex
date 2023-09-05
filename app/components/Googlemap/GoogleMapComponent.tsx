@@ -10,6 +10,7 @@ function GoogleMapComponent() {
         width="1920"
         height="450"
         loading="lazy"
+        title="google maps"
       ></iframe>
     </div>
   );

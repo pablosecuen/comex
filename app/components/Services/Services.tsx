@@ -20,7 +20,9 @@ function Services() {
               </div>
             </div>
             <span className={styles.servicios}>{service.servicio}</span>
-            <button className={styles.button1}>MAS INFO</button>
+            <button role="button" className={styles.button1}>
+              MAS INFO
+            </button>
           </div>
         ))}
       </div>

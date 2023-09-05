@@ -43,10 +43,10 @@ function Landing() {
               agrupacion
             </span>
             <div className={styles.buttoncontainer}>
-              <button className={styles.btnservices}>
+              <button role="button" className={styles.btnservices}>
                 <Link href="#servicios">SERVICIOS</Link>
               </button>
-              <button className={styles.btnaditionals}>
+              <button role="button" className={styles.btnaditionals}>
                 <Link href="#servicios">ADICIONALES</Link>
               </button>
             </div>

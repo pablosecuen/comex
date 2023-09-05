@@ -57,7 +57,9 @@ function ContactForm() {
               placeholder="Mensaje"
             ></textarea>
           </div>
-          <button className={style.btn}>ENVIAR</button>
+          <button role="submit" className={style.btn}>
+            ENVIAR
+          </button>
         </form>
       </div>
     </section>

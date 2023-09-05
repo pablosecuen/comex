@@ -48,7 +48,9 @@ function Footer() {
         </div>
         <div className={style.div4}>
           <input className={style.input} />
-          <button className={style.btn}>✓</button>
+          <button role="button" className={style.btn}>
+            ✓
+          </button>
         </div>
         <div className={style.div5}>
           <h5 className={style.seguinos}>SEGUINOS</h5>

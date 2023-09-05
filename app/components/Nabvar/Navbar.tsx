@@ -20,6 +20,7 @@ const Navbar: React.FC = () => {
       <div className={styles.navcontainer}>
         <Image src="/assets/logo.svg" width={150} height={50} alt="logo" />
         <button
+          role="button"
           onClick={toggleMenu}
           className={`${styles["animation-container"]} ${styles.burgerbtm}`}
         >

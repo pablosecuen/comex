@@ -18,7 +18,7 @@
 
 .whatsapp {
   flex: 1;
-  font-size: 30px;
+  font-size: 28px;
   &:hover {
     cursor: pointer;
     transform: translateX(2px) translateY(2px);

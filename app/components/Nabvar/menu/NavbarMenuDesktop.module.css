@@ -132,6 +132,8 @@
 
 .enlacesli {
   position: relative;
+  font-family: "bebasneue";
+  letter-spacing: 3px;
   &:hover {
     cursor: pointer;
   }

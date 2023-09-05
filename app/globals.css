@@ -78,6 +78,36 @@
   background-color: white; /* Usar el color definido en :root */
 }
 
+@font-face {
+  font-family: "bebasneue";
+  src: url("../public/assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url("../public/assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "bebasneue";
+  letter-spacing: 3px;
+}
+
+span,
+p {
+  font-family: "roboto";
+  letter-spacing: 1px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

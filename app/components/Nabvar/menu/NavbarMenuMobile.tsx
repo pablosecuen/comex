@@ -12,7 +12,6 @@ const NavbarMenuMobile: React.FC<NavbarMenuMobileProps> = ({ isOpen, toggleMenu 
 
   useEffect(() => {
     setShowServices(isOpen);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleSummaryClick = () => {
@@ -30,7 +29,7 @@ const NavbarMenuMobile: React.FC<NavbarMenuMobileProps> = ({ isOpen, toggleMenu 
       <nav className={`${styles.navmobile} ${isOpen ? styles.open : ""}`}>
         <ul className={styles.navul}>
           <Link href="#landing">
-            <li>HOME</li>
+            <li onClick={toggleMenu}>HOME</li>
           </Link>
           <li>
             <details open={showServices} onToggle={handleSummaryClick}>
@@ -52,7 +51,7 @@ const NavbarMenuMobile: React.FC<NavbarMenuMobileProps> = ({ isOpen, toggleMenu 
             </details>
           </li>
           <Link href="#nosotros">
-            <li>NOSOTROS</li>
+            <li onClick={toggleMenu}>NOSOTROS</li>
           </Link>
 
           <li>
@@ -77,7 +76,7 @@ const NavbarMenuMobile: React.FC<NavbarMenuMobileProps> = ({ isOpen, toggleMenu 
           </li>
 
           <Link href="#contacto">
-            <li>CONTACTO</li>
+            <li onClick={toggleMenu}>CONTACTO</li>
           </Link>
         </ul>
       </nav>

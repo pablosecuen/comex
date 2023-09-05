@@ -36,7 +36,7 @@
 }
 
 .span {
-  color: white;
+  color: black;
   -webkit-text-stroke: 1px #55bbbb;
   font-size: 25px;
   font-weight: 200;
@@ -81,6 +81,9 @@
   padding: 10px 20px 10px 20px;
   &:hover {
     cursor: pointer;
+    transform: translateX(2px) translateY(2px);
+    background-color: #397e7e;
+    transition: 0.2s ease;
   }
 }
 

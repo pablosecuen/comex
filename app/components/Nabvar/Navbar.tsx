@@ -9,7 +9,6 @@ import NavbarMenuDesktop from "./menu/NavbarMenuDesktop";
 import NavbarMenuMobile from "./menu/NavbarMenuMobile";
 
 const Navbar: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {

@@ -164,6 +164,8 @@
   &:hover {
     cursor: pointer;
     transform: translateX(2px) translateY(2px);
+    transition: 0.2s ease;
+    background-color: #397e7e;
   }
 }
 
@@ -173,6 +175,8 @@
   &:hover {
     cursor: pointer;
     transform: translateX(2px) translateY(2px);
+    background-color: #397e7e;
+    transition: 0.2s ease;
   }
 }
 

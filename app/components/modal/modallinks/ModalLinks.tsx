@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ModalLinks.module.css";
+import styles from "./modallinks.module.css";
 import Image from "next/image";
 import { enlaces } from "@/app/data/data";
 

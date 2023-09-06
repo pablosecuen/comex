@@ -1,0 +1,72 @@
+.modal {
+  position: absolute;
+  top: 30px;
+  height: auto;
+  width: 750px;
+  right: 50%;
+  transform: translate(50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+  font-size: 10px;
+  gap: 4px;
+  padding: 20px;
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.53);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.servicecard {
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  height: 140px;
+  gap: 4px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  border: 0.5px solid white;
+}
+
+.card {
+  width: 100px;
+  display: flex;
+  min-height: 100px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.icon {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 12px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #55bbbb;
+  padding-bottom: 6px;
+}

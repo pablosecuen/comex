@@ -1,9 +1,9 @@
 "use client";
-import Image from "next/image";
 import styles from "./NavbarMenuDesktop.module.css";
 import Link from "next/link";
 import { useState } from "react";
-import { services, enlaces } from "@/app/data/data";
+import ModalServices from "../../modal/modalservices/ModalServices";
+import ModalLinks from "../../modal/modallinks/ModalLinks";
 
 const NavbarMenuDesktop: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,23 +34,7 @@ const NavbarMenuDesktop: React.FC = () => {
         <Link href="#servicios">
           <li onMouseEnter={handleMouseEnter} className={styles.serviciosli}>
             SERVICIOS
-            {isModalOpen && (
-              <div className={styles.modal} onMouseLeave={handleMouseLeave}>
-                {/* Contenido del menú secundario */}
-                {services.map((service, index) => (
-                  <div className={styles.servicecard} key={index}>
-                    <div className={styles.icon}>
-                      <strong>
-                        <p className={styles.title}> {service.title.toLocaleUpperCase()}</p>
-                      </strong>
-                    </div>
-                    <div className={styles.card}>
-                      <span className={styles.servicios}>{service.servicio}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
+            {isModalOpen && <ModalServices handleMouseLeave={handleMouseLeave} />}
           </li>
         </Link>
         <Link href="#nosotros">
@@ -59,27 +43,7 @@ const NavbarMenuDesktop: React.FC = () => {
 
         <li onMouseEnter={handleMouseEnterLinks} className={styles.enlacesli}>
           ENLACES
-          {isLinksOpen && (
-            <div className={styles.modal2} onMouseLeave={handleMouseLeaveLinks}>
-              {enlaces.map((enlaces, index) => (
-                <div className={styles.linkscard} key={index}>
-                  <ul className={styles.ul}>
-                    <li>
-                      <a
-                        href={enlaces.link}
-                        target="_blank"
-                        rel="noreferrer"
-                        className={styles.links}
-                      >
-                        <Image src={enlaces.icon} width={60} height={60} alt="icono" />
-                        {enlaces.name}
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              ))}
-            </div>
-          )}
+          {isLinksOpen && <ModalLinks handleMouseLeaveLinks={handleMouseLeaveLinks} />}
         </li>
         <Link href="#contacto">
           <li>CONTACTO</li>
